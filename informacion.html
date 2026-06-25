@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Cala Cala</title>
+    <!-- Mantenemos el mismo archivo de estilos CSS compartido -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pie_pagina.css">
+    <link rel="stylesheet" href="informacion.css">
+</head>
+<body>  
+    
+    <!-- Encabezado de la página (Misma foto de fondo y títulos) -->
+    <header>
+        <div class="header-container">
+            <div class="header-text">
+                <h1> Cala cala </h1>
+                <p>Tierra de la Qhonqhota</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación (Ahora el botón "Informacion" es el activo) -->
+    <nav class="barra-menu">
+        <a href="index.html">Inicio</a>
+        <a href="informacion.html" class="activo">Informacion</a>   
+        <a href="#">Proyectos</a>
+        <a href="ambientes.html">Instrumentos</a>
+        <a href="#">Contactos</a>
+    </nav>
+
+        <!-- 🌟 CARRUSEL CON HISTORIAS Y MÚLTIPLES IMÁGENES DESLIZANTES -->
+    <main class="carousel-seccion">
+        <div class="carousel-contenedor">
+            
+            <!-- DIAPOSITIVA 1: HISTORIA PRINCIPAL -->
+            <div class="slide active">
+                <!-- 📸 Grupo de fotos que se deslizan para esta historia -->
+                <div class="imagenes-slider">
+                    <img src="imagen/historia1.jpg" alt="Cala Cala Foto A" class="sub-foto active">
+                    <img src="imagen/historia2.jpg" alt="Cala Cala Foto B" class="sub-foto">
+                    <img src="imagen/imagen5.jpeg" alt="Cala Cala Foto C" class="sub-foto">
+                </div>
+                <!-- 📝 Texto fijo exclusivo de esta diapositiva -->
+                <div class="texto-overlay">
+                    <h2>HISTORIA DE CALA CALA</h2>
+                    <p>"Cala Cala" proviene de la voz aymara, que significa "piedra piedra" o "región de muchas rocas"
+                         Esto describe el paisaje natural y rocoso característico de esta zona del altiplano y la cordillera</p>
+                </div>
+            </div>
+
+            <!-- DIAPOSITIVA 2: LAS PINTURAS -->
+            <div class="slide">
+                <!-- 📸 Grupo de fotos exclusivo para la segunda historia -->
+                <div class="imagenes-slider">
+                    <img src="imagen/cultura2.jpeg" alt="Pinturas Foto A" class="sub-foto active">
+                    <img src="imagen/cultura3.jpg" alt="Pinturas Foto B" class="sub-foto">
+                    <img src="imagen/cultura5.jpg" alt="Pinturas Foto B" class="sub-foto">
+                </div>
+                <div class="texto-overlay">
+                    <h2>Tradicion y Cultura </h2>
+                    <p>En esta región se celebra anualmente el festival dedicado a la Qhonqhota, 
+                        un instrumento de cuerda nativo similar al charango, y a la pinquillo "Declarados Patrimonio Nacional"
+                        ,son tocados por los pobladores para agradecer a la Pachamama por la producción agricola</p>
+                </div>
+            </div>
+
+            <!-- DIAPOSITIVA 3: TRADICIÓN -->
+            <div class="slide">
+                <!-- 📸 Grupo de fotos exclusivo para la tercera historia -->
+                <div class="imagenes-slider">
+                    <img src="imagen/cultura1.jpg" alt="Tradición Foto A" class="sub-foto active">
+                    <img src="imagen/cultura4.jpg" alt="Tradición Foto B" class="sub-foto">
+                    <img src="imagen/cultura6.jpg" alt="Pinturas Foto B" class="sub-foto">
+                    <img src="imagen/cultura7.png" alt="Pinturas Foto B" class="sub-foto">
+                </div>
+                <div class="texto-overlay">
+                    <h2>Tradicion y cultura </h2>
+                    <p> La comunidad ha sido escenario de encuentros y festivales culturales (como el Takiy Tinku), 
+                        reuniendo a difentes pueblos cercanas y autoridades para preservar la musica, danza y los tejidos tradicionales de la region</p>
+                </div>
+            </div>
+
+            <!-- Botones principales para cambiar de Historia -->
+            <button class="btn-carousel prev" onclick="cambiarHistoria(-1)">&#10094;</button>
+            <button class="btn-carousel next" onclick="cambiarHistoria(1)">&#10095;</button>
+        </div>
+    </main>
+    
+         <!--Pie de página profesional de 3 columnas -->
+    <footer class="pie-pagina">
+        <div class="footer-contenedor">
+            
+            <!-- Columna 1: Ubicación -->
+            <div class="footer-columna">
+                <h3>¿Dónde encontrarnos?</h3>
+                <p class="ubicacion">
+                    <strong>Cala cala, Llallagua, Potosí, Bolivia</strong>
+                </p>
+                <div class="redes-sociales">
+                    <a href="#">🌐</a>
+                </div>
+            </div>
+            <!-- Columna 2: Contacto -->
+            <div class="footer-columna">
+                <h3>Contacto</h3>
+                <p><strong>Celular:</strong> <span class="texto-resaltado">(+591) 73324163</span></p>
+                <p><strong>Correo:</strong> <span class="texto-resaltado">calacala@gmail.com</span></p>
+            </div>
+            <!-- Columna 3: Horarios -->
+            <div class="footer-columna">
+                <h3>Horario de apertura de la iglesia</h3>
+                <div class="horario-linea">
+                    <span>Martes - Viernes</span>
+                    <span class="puntos-linea"></span>
+                    <strong>20:00</strong>
+                </div>
+                <div class="horario-linea">
+                    <span>Sábado</span>
+                    <span class="puntos-linea"></span>
+                    <strong>Cerrado</strong>
+                </div>
+                <div class="horario-linea">
+                    <span>Domingo</span>
+                    <span class="puntos-linea"></span>
+                    <strong>Cerrado</strong>
+                </div>
+            </div>
+
+        </div>
+        <!-- Barra inferior de Derechos de Autor -->
+        <div class="footer-derechos">
+            <p>
+                <span>Derechos de autor © king666 Infor 2026</span> 
+                <span class="separador">-</span> 
+                <span>Diseñado por:</span> 
+                <span class="autor-color">maldon</span>
+            </p>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

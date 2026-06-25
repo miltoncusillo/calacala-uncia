@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web de Historia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pie_pagina.css">
+</head>
+<body>  
+    <!-- Encabezado de la pagina -->
+    <header>
+        <div class="header-container ">
+            <div class="header-text">
+                <h1> Cala cala </h1>
+                <p>Tierra de la QHONQHOTA</p>
+            </div>
+        </div>
+
+    </header>
+    <nav class="barra-menu">
+        <a href="#" class="activo">Inicio</a>
+        <a href="informacion.html">Informacion</a>
+        <a href="#">Proyectos</a>
+        <a href="ambientes.html">Instrumentos</a>
+        <a href="#">Contactos</a>
+    </nav>
+
+    <main class="timeline-contenedor">
+        <div class="tarjeta-historica" onclick="ampliarImagen(this)">
+            <img src="imagen/imagen3.jpg" alt="Calacala">
+            <div class="infor-imagen">
+                <p>Ivitacion por parte de las autoridades del Ayllu Puraca 
+                    a la fiesta de San Antonio que se llevara a cabo los 
+                    dias 12, 13 y 14 de junio de 2026.
+                </p>
+            </div>
+        </div>
+        <div class="tarjeta-historica" onclick="ampliarImagen(this)">
+            <img src="imagen/imagen5.jpeg" alt="Calacala">
+            <div class="infor-imagen">
+                <p>Pueblo Cala cala 2026</p>
+            </div>
+        </div>
+        <div class="tarjeta-historica" onclick="ampliarImagen(this)">
+            <img src="imagen/cala-cala.jpg" alt="Calacala">
+            <div class="infor-imagen">
+                <p>Iglesia Catolica de nuestro Pueblo Cala cala</p>
+            </div>
+        </div>
+        <div class="tarjeta-historica" onclick="ampliarImagen(this)">
+            <img src="imagen/imagen5.jpg" alt="Calacala">
+            <div class="infor-imagen">
+                <p>La llegada del presidente Arce Catacora en nuestra festival de Qhoqhota 
+                    18 de febrero de 2025
+                </p>
+            </div>
+        </div>
+        <div class="tarjeta-historica" onclick="ampliarImagen(this)">
+            <img src="imagen/imagen4.jpg" alt="Calacala">
+            <div class="infor-imagen">
+                <p>Grupo Luceros 1er Lugar en la Categoria de Qhonqhota 2025 </p>
+            </div>
+        </div>
+        <div class="tarjeta-historica" onclick="ampliarImagen(this)">
+            <img src="imagen/imagen6.jpg" alt="Calacala">
+            <div class="infor-imagen">
+                <p>Desimo Aniversario Festival de Qhonqhota Cala cala 2025
+                    se llevara a cabo los dias 18 y 19 de febrero
+                </p>
+            </div>
+        </div>
+        <div class="tarjeta-historica" onclick="ampliarImagen(this)">
+            <img src="imagen/imagen8.jpg" alt="Calacala">
+            <div class="infor-imagen">
+                <p>Desfile de nuestros estudiantes de la unidad educativa "6 de Junio"
+                    por el aniversario de Nuestra Patria 2025
+                </p>
+            </div>
+        </div>
+        <div class="tarjeta-historica" onclick="ampliarImagen(this)">
+            <img src="imagen/imagen9.jpg" alt="Calacala">
+            <div class="infor-imagen">
+                <p>Desfile de nuestros Autoridades del Ayllu Puraca 
+                    por el aniversario de Nuestra Patria 2025</p>
+            </div>
+        </div>
+        <div class="tarjeta-historica" onclick="ampliarImagen(this)">
+            <img src="imagen/imagen10.jpg" alt="Calacala">
+            <div class="infor-imagen">
+                <p>Desfile de nuestros estudiantes de la unidad educativa "San Antonio"
+                    por el aniversario de Nuestra Patria 2025</p>
+            </div>
+        </div>
+    </main>
+
+        <!--Ventana flotante -->
+    <dialog id="modal-foto" onclick="cerrarImagen()">
+        <span class="boton-cerrar">&times;</span>
+        <img id="foto-grande" src="" alt="Vista ampliada">
+    </dialog>
+
+
+        <!--Pie de pagina -->
+    <footer class="pie-pagina">
+        <div class="footer-contenedor">
+            <div class="footer-columna">
+                <h3>¿Donde encontrarnos?</h3>
+                <p class="ubicacion">
+                    <strong>Cala cala, Llallagua, Potosí, Bolivia</strong>
+                </p>
+                <div class="redes-sociales">
+                    <a href="#">🌐</a>
+                </div>
+            </div>
+            <div class="footer-columna">
+                <h3>Contacto</h3>
+                <p><strong>Celular:</strong> <span class="texto-resaltado">(+591) 73324163</span></p>
+                <p><strong>Correo:</strong> <span class="texto-resaltado">calacala@gmail.com</span></p>
+            </div>
+            <div class="footer-columna">
+                <h3>Horario de apertura de la iglesia</h3>
+                <div class="horario-linea">
+                    <span>Martes - Viernes</span>
+                    <span class="puntos-linea"></span>
+                    <strong>20:00</strong>
+                </div>
+                <div class="horario-linea">
+                    <span>Sábado</span>
+                    <span class="puntos-linea"></span>
+                    <strong>Cerrado</strong>
+                </div>
+                <div class="horario-linea">
+                    <span>Domingo</span>
+                    <span class="puntos-linea"></span>
+                    <strong>Cerrado</strong>
+                </div>
+            </div>
+
+        </div>
+        <!-- Barra inferior -->
+        <div class="footer-derechos">
+            <p>
+                <span>Derechos de autor © king666 Infor 2026</span> 
+                <span class="separador">-</span> 
+                <span>Diseñado por:</span> 
+                <span class="autor-color">maldon</span>
+            </p>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambientes - Cala Cala</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ambientes.css">
+    <link rel="stylesheet" href="pie_pagina.css">
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>  
+
+    <header>
+        <div class="header-container">
+            <div class="header-text">
+                <h1> Cala cala </h1>
+                <p>Tierra de la konkota</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu de navegacion) -->
+    <nav class="barra-menu">
+        <a href="index.html">Inicio</a>
+        <a href="informacion.html">Informacion</a> 
+        <a href="#">Proyectos</a>
+        <a href="ambientes.html" class="activo">Instrumentos</a>
+        <a href="#">Contactos</a>
+    </nav>
+            <main class="contenido-instrumento">
+        <h2>Instrumentos Autoctonos de Cala Cala</h2>
+        <section class="galeria-3d">
+            <div class="contenedor-3d">
+                <h3>Qhonqhota</h3>
+                <model-viewer 
+                    src="objetos/qonqota.glb" 
+                    alt="Modelo 3D de la Qhonqota" 
+                    camera-controls 
+                    interaction-prompt="none"
+                    shadow-intensity="1.5">
+                </model-viewer>
+            </div>
+            <div class="contenedor-3d">
+                <h3> Jula Jula</h3>
+                <model-viewer 
+                    src="objetos/jula-jula.glb" 
+                    alt="Modelo 3D de tu segundo instrumento" 
+                    camera-controls
+                    interaction-prompt="none" 
+                    shadow-intensity="1.5">
+                </model-viewer>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="contenedor-3d"></div>
+    <footer class="pie-pagina">
+        <div class="footer-contenedor">
+            <div class="footer-columna">
+                <h3>¿Donde encontrarnos?</h3>
+                <p class="ubicacion">
+                    <strong>Cala cala, Llallagua, Potosi, Bolivia</strong>
+                </p>
+                <div class="redes-sociales">
+                    <a href="#">🌐</a>
+                </div>
+            </div>
+            <div class="footer-columna">
+                <h3>Contacto</h3>
+                <p><strong>Celular:</strong> <span class="texto-resaltado">(+591) 73324163</span></p>
+                <p><strong>Correo:</strong> <span class="texto-resaltado">calacala@gmail.com</span></p>
+            </div>
+            <div class="footer-columna">
+                <h3>Horario de apertura de la iglesia</h3>
+                <div class="horario-linea">
+                    <span>Martes - Viernes</span>
+                    <span class="puntos-linea"></span>
+                    <strong>20:00</strong>
+                </div>
+                <div class="horario-linea">
+                    <span>Sábado</span>
+                    <span class="puntos-linea"></span>
+                    <strong>Cerrado</strong>
+                </div>
+                <div class="horario-linea">
+                    <span>Domingo</span>
+                    <span class="puntos-linea"></span>
+                    <strong>Cerrado</strong>
+                </div>
+            </div>
+
+        </div>
+        <!-- Barra inferior -->
+        <div class="footer-derechos">
+            <p>
+                <span>Derechos de autor © king666 Infor 2026</span> 
+                <span class="separador">-</span> 
+                <span>Diseñado por:</span> 
+                <span class="autor-color">maldon</span>
+            </p>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

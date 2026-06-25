@@ -1,0 +1,104 @@
+/* ESTILOS PARA EL PIE DE PÁGINA */
+.pie-pagina {
+    background-color: #03132c;    /* Color azul oscuro/marino idéntico al de la imagen */
+    color: #ffffff;               /* Texto blanco en general */
+    font-family: sans-serif;
+    padding: 60px 20px 20px 20px; /* Aire interno arriba y abajo */
+    margin-top: 80px;             /* Separa el footer de tus imágenes superiores */
+}
+
+/* Contenedor que agrupa las 3 columnas */
+.footer-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas idénticas */
+    gap: 50px;                    /* Espaciado amplio entre secciones */
+    max-width: 1200px;
+    margin: 0 auto;               /* Centra el bloque en pantallas grandes */
+}
+
+/* Estilos de los títulos de cada columna */
+.footer-columna h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-style: italic;           /* Letras cursivas como en la imagen */
+    color: #b0c4de;               /* Azul grisáceo suave */
+    margin-bottom: 25px;
+}
+
+/* Estilos de textos generales del footer */
+.footer-columna p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Resaltado de color rojo/coral para los datos de contacto */
+.texto-resaltado {
+    color: #cc4141;               /* Tono rojizo exacto al de tu captura */
+}
+
+/* Caja de iconos de redes sociales */
+.redes-sociales {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociales a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.redes-sociales a:hover {
+    opacity: 1;
+}
+
+/* 🕒 SISTEMA PARA LAS LÍNEAS DE LOS HORARIOS */
+.horario-linea {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+/* Crea la línea horizontal punteada o continua que conecta el día con la hora */
+.puntos-linea {
+    flex-grow: 1;                 /* Obliga a la línea a ocupar todo el espacio disponible */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea delgada semitransparente */
+    margin: 0 10px;               /* Separa la línea de las letras */
+}
+
+/* 📜 BARRA DE DERECHOS DE AUTOR INFEDIOR */
+.footer-derechos {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea horizontal divisoria */
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: left; 
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fuerza a todos los textos internos a alinearse uno al lado del otro */
+.footer-derechos p {
+    margin: 0;
+    font-size: 0.88rem;
+    font-family: sans-serif;
+    color: #8c8585; /* Color gris suave para los derechos estándar */
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Separación perfecta de 6px entre palabras */
+}
+
+.footer-derechos .separador {
+    color: #8c8585;
+}
+
+/* 🌟 TU FIRMA DE AUTOR DESTACADA */
+.footer-derechos .autor-color {
+    color: #a3b83b; /* Color verde oliva brillante para que resalte tu nombre */
+    font-weight: bold;
+    text-transform: capitalize; /* Pone automáticamente la primera letra de tu nombre en mayúscula */
+}
